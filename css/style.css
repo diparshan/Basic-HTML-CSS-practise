@@ -1,0 +1,220 @@
+/*global*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.highlight,
+.current a {
+  color: orangered;
+}
+
+.button_1 {
+  background-color: orangered;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+}
+
+.dark {
+  background-color: #354241;
+  padding: 10px;
+  color: white;
+}
+
+.button_1:hover {
+  color: #354241;
+}
+
+/*header*/
+header {
+  background-color: #354241;
+  color: #ffffff;
+  padding: 30px 0 30px 0;
+  border-bottom: orangered 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+header li {
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+header .branding {
+  float: left;
+}
+
+header nav {
+  float: right;
+  padding-top: 7px;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/*introduction*/
+.intro {
+  min-height: 500px;
+  background: url(./images/showcase.jpg) no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+/*newsletter*/
+.newsletter {
+  background-color: #354241;
+  padding: 20px 0 20px 0;
+  color: white;
+}
+
+.newsletter h3 {
+  float: left;
+  font-size: 20px;
+}
+
+.newsletter form {
+  float: right;
+}
+
+.newsletter input[type="email"] {
+  height: 27px;
+  width: 200px;
+}
+
+/*showcase*/
+.showcase {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.showcase .box {
+  float: left;
+  width: 30%;
+  padding: 12px;
+}
+
+.showcase img {
+  height: 180px;
+  width: 150px;
+}
+
+/*main column*/
+article {
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+
+.main-col h1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.main-col p {
+  padding-bottom: 10px;
+}
+
+/*sidebar*/
+.sidebar {
+  margin-top: 60px;
+  float: right;
+  width: 30%;
+  text-align: left;
+}
+
+.sidebar h3 {
+  padding-bottom: 15px;
+}
+
+/*services*/
+.main {
+  padding-top: 20px;
+}
+
+.blog {
+  background-color: gainsboro;
+  border: #cccccc solid 1px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+/*Get a quote*/
+.sidebar .quote input,
+.sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/*footer*/
+footer {
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+  header .branding,
+  header nav,
+  .newsletter h3,
+  .newsletter form,
+  .showcase .box,
+  .main .main-col,
+  .main .sidebar,
+  .showcase .main-col,
+  .showcase .sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .newsletter button,
+  .sidebar button {
+    display: block;
+    width: 100%;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin: 15px 0 5px 0;
+  }
+
+  .main {
+    margin-bottom: 20px;
+  }
+}
